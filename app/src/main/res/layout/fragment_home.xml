@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/amountId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="148dp"
+            android:ems="10"
+            android:hint="Enter your amount"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/payButtonId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="SsLCommertz"
+            app:layout_constraintEnd_toEndOf="@+id/amountId"
+            app:layout_constraintStart_toStartOf="@+id/amountId"
+            app:layout_constraintTop_toBottomOf="@+id/amountId" />
+
+
+        <EditText
+            android:id="@+id/amountIdBkash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:hint="Enter your amount"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="@+id/payButtonId"
+            app:layout_constraintStart_toStartOf="@+id/payButtonId"
+            app:layout_constraintTop_toBottomOf="@+id/payButtonId" />
+
+        <Button
+            android:id="@+id/bKash_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#E91E63"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Pay"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/amountIdBkash"
+            app:layout_constraintStart_toStartOf="@+id/amountIdBkash"
+            app:layout_constraintTop_toBottomOf="@+id/amountIdBkash" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
