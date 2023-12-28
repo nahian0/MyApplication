@@ -35,7 +35,7 @@ import kotlinx.coroutines.launch
 
 class HomeViewModel : ViewModel() {
     private val job = Job()
-    private val grantTokenLiveData = SingleLiveEvent<GrantTokenResponse?>()
+    val grantTokenLiveData = SingleLiveEvent<GrantTokenResponse?>()
     private val createPaymentLiveData = SingleLiveEvent<CreatePaymentResponse?>()
     private val executePaymentLiveData = SingleLiveEvent<ExecutePaymentResponse?>()
     private val queryPaymentLiveData = SingleLiveEvent<QueryPaymentResponse?>()
