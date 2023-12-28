@@ -7,7 +7,22 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.myapplication.HomeFragment"
+        android:name="com.example.myapplication.fragments.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/sslComertezFragment"
+        android:name="com.example.myapplication.fragments.SslComertezFragment"
+        android:label="fragment_ssl_comertez"
+        tools:layout="@layout/fragment_ssl_comertez" />
+    <fragment
+        android:id="@+id/bkashFragment"
+        android:name="com.example.myapplication.fragments.BkashFragment"
+        android:label="fragment_bkash"
+        tools:layout="@layout/fragment_bkash" />
+    <fragment
+        android:id="@+id/webviewFragment"
+        android:name="com.example.myapplication.fragments.WebviewFragment"
+        android:label="fragment_webview"
+        tools:layout="@layout/fragment_webview" />
 </navigation>

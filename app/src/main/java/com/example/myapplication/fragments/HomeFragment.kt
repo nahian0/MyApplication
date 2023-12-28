@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.fragments
 
 import android.app.ProgressDialog
 import android.content.Context
@@ -14,6 +14,7 @@ import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
+import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentHomeBinding
 import com.example.myapplication.network.InternetConnection
 import com.example.myapplication.viewmodels.HomeViewModel

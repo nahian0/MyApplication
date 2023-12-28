@@ -1,21 +1,19 @@
-package com.example.myapplication
+package com.example.myapplication.fragments
 
 import android.annotation.SuppressLint
 import android.app.AlertDialog
 import android.content.ActivityNotFoundException
 import android.content.DialogInterface
-import android.graphics.Bitmap
 import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.webkit.WebChromeClient
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.Button
-import android.widget.ProgressBar
 import androidx.fragment.app.DialogFragment
+import com.example.myapplication.R
 import com.example.myapplication.util.Constants
 
 
@@ -51,7 +49,9 @@ class WebviewFragment : DialogFragment() {
                     dialog?.dismiss()
                 }
                 else if(url.toString().contains("status=failure")){
-                    val builder: AlertDialog.Builder = AlertDialog.Builder(requireContext(), R.style.DialogStyle).apply {
+                    val builder: AlertDialog.Builder = AlertDialog.Builder(requireContext(),
+                        R.style.DialogStyle
+                    ).apply {
                         setTitle("Payment Failure!!")
                         setCancelable(false)
                         setPositiveButton("Try Again") { _, _ ->
@@ -70,7 +70,9 @@ class WebviewFragment : DialogFragment() {
                     dialog?.dismiss()
                 }
                 else if(url.toString().contains("status=cancel")){
-                    val builder: AlertDialog.Builder = AlertDialog.Builder(requireContext(), R.style.DialogStyle).apply {
+                    val builder: AlertDialog.Builder = AlertDialog.Builder(requireContext(),
+                        R.style.DialogStyle
+                    ).apply {
                         setTitle("Payment Canceled!!")
                         setCancelable(false)
                         setPositiveButton("Okay") { _, _ ->
